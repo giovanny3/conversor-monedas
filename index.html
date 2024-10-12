@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="contenedor-gnrl">
+        <h1>Conversor de Monedas Nacional</h1>
+        <div class="conversor">
+            <h2>Pesos CLP</h2>
+
+            <input type="number" class="escribir-monto" id="monto">
+
+            <p class="texto-moneda">Moneda a Convertir:</p>
+
+            <select name="" id="moneda" class="seleccionar-moneda">
+                <option value="moneda">Elige la Moneda</option>
+                <option value="ivp">IVP</option>
+                <option value="dolar">Dólar</option>
+                <option value="dolar_intercambio">Dólar Intercambio</option>
+                <option value="euro">Euro</option>
+                <option value="ipc">IPC</option>
+                <option value="utm">UTM</option>
+                <option value="imacec">Imacec</option>
+                <option value="tpm">TPM</option>
+                <option value="libra_cobre">Libra Cobre</option>
+                <option value="tada_desempleo">Tasa Desempleo</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+            <button id="calcular"><b>Calcular</b></button>
+            <p id="resultado">Resultado:</p>
+        </div>
+        <span id="errorSpan"></span>
+        <div class="contenedor-grafico">
+            <canvas class="grafico" id="myChart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
